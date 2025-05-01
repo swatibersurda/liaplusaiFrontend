@@ -22,17 +22,17 @@ The following is the tech stack I used to build this website:-
 
 
 ## Register Page :
-The user will register by adding details like name, email, password, and phone.
+The user will register by adding details like name, email, password.
 
 ![Regsiter_Page](https://github.com/swatibersurda/liaplusaiFrontend/blob/main/frontend/src/assets/register.PNG)
 
 After successfully registering, you will be redirected to the login page.
 ## Login Page :
-The user will log in by entering his/her username and password or can Google Login If not registered then Register first click on Register.
+The user will log in by entering his/her email and password.
 
 ![Login_Page](https://github.com/swatibersurda/liaplusaiFrontend/blob/main/frontend/src/assets/login.PNG)
 
-After successfully logging in, you will be redirected to the home page.
+After successfully logging in, you will be redirected to the blog page.
 
 
 
