@@ -87,7 +87,9 @@ Normal user login...
 3. Register yourself and then log in with credentials.
 4. After successfully login you can see the blog.
 5. you can also logout
-Admin Login.
+
+
+Admin Login......
 admin credentials will be get from the .env file
 1. After login from admin credentials you can see the admin view.
 2. Press admin tab will redirect to admin page
