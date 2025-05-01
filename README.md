@@ -14,7 +14,6 @@ The following is the tech stack I used to build this website:-
 
 <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/redux-icon.png" width=20 /> Redux toolkit
 
-<img src="https://cdn-icons-png.flaticon.com/128/5968/5968381.png" width=20 /> Typescript
 
 
 
