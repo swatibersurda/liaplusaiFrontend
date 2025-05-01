@@ -1,4 +1,4 @@
-# Door Shop Ecommerce App
+# Blog App
 This is an blog-based app.
 
 ## Tech Stack :
@@ -80,7 +80,7 @@ When click on add redirect to addBlog page...
 
 
 
-## Usage :
+## Usage in local :
 1. npm install
 2. npm run dev to run the react app.
 Normal user login...
