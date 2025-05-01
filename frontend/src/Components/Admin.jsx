@@ -31,6 +31,7 @@ const Admin = () => {
             <th className="border p-2 text-left">Author</th>
             <th className="border p-2 text-left">Delete</th>
             <th className="border p-2 text-left">Add</th>
+            <th className="border p-2 text-left">Update</th>
           </tr>
         </thead>
         <tbody>
@@ -49,6 +50,9 @@ const Admin = () => {
               </td>
               <td className="border p-2">
                 <Link to={"/addblog"}>add</Link>
+              </td>
+              <td className="border p-2">
+                <Link to={`/updateblog/${user?._id}`}>update</Link>
               </td>
             </tr>
           ))}

@@ -28,6 +28,16 @@ export const blogApi = createApi({
       }),
       invalidatesTags: ['Blog'], 
     }),
+    updatePost: builder.mutation({
+      query: ({id,payload}) => {
+        return{
+        url: `updatePost/${id}`,
+        body:payload,
+        method: "PATCH",
+        credentials: "include",
+      }},
+      invalidatesTags: ['Blog'], 
+    }),
     getPost: builder.query({
         query: () => ({
           url: "getPost",
@@ -39,5 +49,5 @@ export const blogApi = createApi({
 });
 
 export const {
-  useAddPostMutation,useDeletePostMutation,useGetPostQuery
+  useAddPostMutation,useDeletePostMutation,useGetPostQuery,useUpdatePostMutation
 } = blogApi;

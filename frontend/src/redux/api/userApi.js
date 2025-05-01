@@ -9,7 +9,6 @@ export const userApi = createApi({
   endpoints: (builder) => ({
     register: builder.mutation({
       query: (user) => {
-        console.log(user,"i am userr")
         return{
         url: "register",
         method: "POST",

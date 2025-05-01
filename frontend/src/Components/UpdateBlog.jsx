@@ -1,19 +1,32 @@
 
 import React, { useState } from "react";
 import { toast } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
-import { useAddPostMutation } from "../redux/api/blogApi";
+import { useNavigate, useParams } from "react-router-dom";
+import { useAddPostMutation, useUpdatePostMutation } from "../redux/api/blogApi";
 import Navbar from "./Navbar";
-const Addblog = () => {
+const UpdateBlog = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [author, setAuthor] = useState("");
   const navigate = useNavigate();
-  const [addPost] = useAddPostMutation();
-  const addBlogHandler = async (event) => {
+  const [updatePost] = useUpdatePostMutation();
+  const {id}=useParams();
+  const updateBlogHandler = async (event) => {
     event.preventDefault();
     try {
-      const res = await addPost({ title, content, author });
+        let payload={}
+        if(title!==""){
+            payload.title=title
+        }
+        if(content!==""){
+            payload.content=content
+        }
+        if(author!==""){
+            payload.author=author
+        }
+    
+      const res = await updatePost({id,payload});
+      
       if ("data" in res) {
         toast.success("Blog added successfully");
         navigate("/blog")
@@ -30,7 +43,7 @@ const Addblog = () => {
       <Navbar/>
       <div className="max-w-[1000px] mx-auto  bg-blue-300 rounded px-4 sm:px-6 my-30 lg:px-8">
         <h1 className="text-center text-3xl text-black-400 mt-10 pt-10 sm:pt-10">
-          Add Blog Here
+         Update Blog Here
         </h1>
         <form className="space-y-6 mt-10 pb-10">
           <div className="max-w-[600px] mx-auto">
@@ -84,11 +97,11 @@ const Addblog = () => {
           {/* Submit Button */}
           <div className="max-w-[600px] mx-auto">
             <button
-              onClick={addBlogHandler}
+              onClick={updateBlogHandler}
               type="submit"
               className="text-lg sm:text-2xl font-bold block w-full sm:w-[200px] mx-auto p-2 border  text-black rounded-md  mb-10 hover:bg-blue-600"
             >
-              AddBlog
+              Update Blog
             </button>
           </div>
         </form>
@@ -97,4 +110,4 @@ const Addblog = () => {
   );
 };
 
-export default Addblog;
+export default UpdateBlog;
