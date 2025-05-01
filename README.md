@@ -49,13 +49,19 @@ This is authenticated user's blog view
  
 Will show authorize admin button only to admin.Delete button will delete the blog directly
 
-![Add Profile pic_Page](https://github.com/swatibersurda/liaplusaiFrontend/blob/main/frontend/src/assets/admin.PNG)
+![Add Profile pic_Page](https://github.com/swatibersurda/liaplusaiFrontend/blob/main/frontend/src/assets/adminview2.PNG)
 
 
 When click on add redirect to addBlog page...
 
 ![Add Blog](https://github.com/swatibersurda/liaplusaiFrontend/blob/main/frontend/src/assets/addBlog.PNG)
 
+when click on update redirect to updateblog page
+
+
+![adminview Blog](https://github.com/swatibersurda/liaplusaiFrontend/blob/main/frontend/src/assets/updateBlog.PNG)
+
+![adminview Blog](https://github.com/swatibersurda/liaplusaiFrontend/blob/main/frontend/src/assets/adminview2.PNG)
 
 ![adminview Blog](https://github.com/swatibersurda/liaplusaiFrontend/blob/main/frontend/src/assets/blogadmin.PNG)
 
@@ -81,7 +87,7 @@ When click on add redirect to addBlog page...
 
 
 ## Usage in local :
-1. npm install
+1. Clone repo and npm install
 2. npm run dev to run the react app.
 Normal user login...
 3. Register yourself and then log in with credentials.
@@ -95,6 +101,7 @@ admin credentials will be get from the .env file
 2. Press admin tab will redirect to admin page
 3. From the admin table, the delete button can delete the particular blog which you want to delete
 4. Add link will redirect to you add blog page where admin can add blog after successfully adding the blog will redirect to blog page where you can see the added blog and all blogs.
+5. UPDATE link will redirect to you UPDATE blog page where admin can update blog after successfully updating the blog ,will redirect to blog page where you can see the updated blog and all blogs.
 
 
 ## Contributor :
